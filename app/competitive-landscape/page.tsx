@@ -240,7 +240,11 @@ export default function CompetitiveLandscape() {
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
             <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-3xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">ShopStyle</h3>
+              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">
+                <a href="https://www.shopstyle.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">
+                  ShopStyle
+                </a>
+              </h3>
               <p className="text-gray-600 font-light mb-4">
                 Search "36 in inseam jeans"
               </p>
@@ -252,7 +256,11 @@ export default function CompetitiveLandscape() {
             </div>
 
             <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Lyst</h3>
+              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">
+                <a href="https://lyst.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">
+                  Lyst
+                </a>
+              </h3>
               <p className="text-gray-600 font-light mb-4">
                 Try to shop across multiple brands
               </p>
@@ -264,7 +272,11 @@ export default function CompetitiveLandscape() {
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Plush.AI</h3>
+              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">
+                <a href="https://www.plush.shop/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">
+                  Plush.AI
+                </a>
+              </h3>
               <p className="text-gray-600 font-light mb-4">
                 Search for extended sizes
               </p>
