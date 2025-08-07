@@ -1,0 +1,493 @@
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import Link from "next/link"
+
+export default function InvestorSite() {
+  return (
+    <div className="min-h-screen bg-white text-black font-light">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <h1 className="text-2xl font-light tracking-wide text-black">simplyaboveaverage</h1>
+            <div className="flex items-center gap-2">
+              <Link href="/market-opportunity">
+                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
+                  Market
+                </Button>
+              </Link>
+              <Link href="/competitive-landscape">
+                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
+                  Competition
+                </Button>
+              </Link>
+              <Link href="/genai">
+                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
+                  GenAI
+                </Button>
+              </Link>
+              <Link href="/go-to-market">
+                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
+                  GTM
+                </Button>
+              </Link>
+              <Link href="/traction">
+                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
+                  Traction
+                </Button>
+              </Link>
+              <div className="text-xs text-gray-500 uppercase tracking-widest font-light">Series Seed</div>
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section - Full Screen */}
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-gray-50/30"></div>
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23000000' fillOpacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        ></div>
+
+        <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
+          <div className="mb-8">
+            <span className="inline-block px-4 py-2 bg-black/5 backdrop-blur-sm rounded-full text-sm font-light text-gray-700 border border-gray-200">
+              Fashion × Technology × Sports
+            </span>
+          </div>
+
+          <h1 className="text-6xl md:text-8xl font-extralight mb-8 leading-none tracking-tight">
+            <span className="bg-gradient-to-r from-gray-900 via-black to-gray-800 bg-clip-text text-transparent">
+              REIMAGINING
+            </span>
+            <br />
+            <span className="text-black font-light">FASHION</span>
+            <br />
+            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent font-light">
+              THAT FITS
+            </span>
+          </h1>
+
+          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+            The AI-powered search engine for extended sizes, backed by athletes who shape culture.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#investment-terms">
+              <Button className="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide">
+                View Investment Terms
+              </Button>
+            </a>
+            <a href="https://youtube.com/shorts/qtandMPSu8I?feature=share" target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="outline"
+                className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-full font-light text-lg bg-transparent tracking-wide"
+              >
+                Watch Demo
+              </Button>
+            </a>
+          </div>
+        </div>
+
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div className="group">
+              <div className="text-5xl font-extralight text-black mb-2 group-hover:text-purple-600 transition-colors">
+                62%
+              </div>
+              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">
+                {"Don't fit off the rack"}
+              </div>
+            </div>
+            <div className="group">
+              <div className="text-5xl font-extralight text-black mb-2 group-hover:text-blue-600 transition-colors">
+                60%
+              </div>
+              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">
+                Return rate for tall shoppers
+              </div>
+            </div>
+            <div className="group">
+              <div className="text-5xl font-extralight text-black mb-2 group-hover:text-green-600 transition-colors">
+                $15K
+              </div>
+              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">Monthly recurring revenue</div>
+            </div>
+            <div className="group">
+              <div className="text-5xl font-extralight text-black mb-2 group-hover:text-yellow-600 transition-colors">
+                NFL
+              </div>
+              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">Athletes signed</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision Cards */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-extralight text-black mb-6 tracking-tight">
+              THE <span className="text-purple-600 font-light">FUTURE</span> {"WE'RE BUILDING"}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
+              Three pillars of our vision to transform fashion for everyone
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="group relative bg-white rounded-3xl p-8 border border-gray-200 hover:border-gray-300 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <h3 className="text-2xl font-light text-black mb-4 tracking-tight">
+                  Search Engine for the Underserved
+                </h3>
+                <p className="text-gray-600 leading-relaxed font-light">
+                  Google Shopping for extended sizes. AI-powered platform connecting hard-to-fit bodies with brands that
+                  actually carry their sizes.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="group relative bg-black rounded-3xl p-8 border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <h3 className="text-2xl font-light text-white mb-4 tracking-tight">Athletes as Architects</h3>
+                <p className="text-gray-300 leading-relaxed font-light">
+                  Beyond endorsements to ownership. We style athletes, curate their image, and give them equity stakes
+                  in the brands they represent.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group relative bg-gray-100 rounded-3xl p-8 border border-gray-300 hover:border-gray-400 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-200/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Cultural Empire</h3>
+                <p className="text-gray-600 leading-relaxed font-light">
+                  Athlete-led cap table. Culture-shaping clients. NYFW shows that set the tone for what athletes wear on
+                  and off the court.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Revenue Model */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">REVENUE STREAMS</h2>
+            <p className="text-xl text-gray-600 font-light">Multiple paths to profitability</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 shadow-sm">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-2xl font-light text-black tracking-tight">Subscriptions</h3>
+                <div className="text-3xl font-extralight text-green-600">$10/mo</div>
+              </div>
+              <p className="text-gray-600 font-light">Premium search access for extended sizes</p>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 shadow-sm">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-2xl font-light text-black tracking-tight">Athlete Styling</h3>
+                <div className="text-3xl font-extralight text-blue-600">$15K/mo</div>
+              </div>
+              <p className="text-gray-600 font-light">High-value retainer contracts</p>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 shadow-sm">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-2xl font-light text-black tracking-tight">Brand Partnerships</h3>
+                <div className="text-3xl font-extralight text-purple-600">10%</div>
+              </div>
+              <p className="text-gray-600 font-light">Commission on affiliate sales</p>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+
+      {/* Investment Terms */}
+      <section id="investment-terms" className="py-20 bg-white">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
+              INVESTMENT OPPORTUNITY
+            </h2>
+            <p className="text-xl text-gray-600 font-light">Join us in reshaping fashion</p>
+          </div>
+
+          <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-3xl p-12 border border-gray-200">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="text-5xl font-extralight text-black mb-4">$500K</div>
+                <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Raising via SAFE</div>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-extralight text-black mb-4">$8M</div>
+                <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Post-Money Cap</div>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-extralight text-black mb-4">0%</div>
+                <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Discount</div>
+              </div>
+            </div>
+
+            <div className="mb-8">
+              <div className="flex justify-between items-center mb-4">
+                <span className="text-xl text-black font-light">$125K committed</span>
+                <span className="text-gray-500 font-light">25%</span>
+              </div>
+              <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+                <div className="bg-gradient-to-r from-purple-500 to-blue-500 h-full w-1/4 rounded-full"></div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <p className="text-gray-600 mb-8 font-light">
+                Funds will be allocated to scaling our engineering team, fine-tuning our proprietary model on extended sizing and fit data, and launching targeted user acquisition campaigns.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">LEADERSHIP TEAM</h2>
+            <p className="text-xl text-gray-600 font-light">Experienced professionals from fashion, sports, and business</p>
+          </div>
+
+          {/* Founder */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-12 border border-gray-200 shadow-sm mb-12">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-shrink-0">
+                <img
+                  src="/placeholder.svg?height=200&width=200&text=Morgan+Mackenzie"
+                  alt="Morgan Mackenzie"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-purple-200"
+                />
+              </div>
+              <div className="text-center md:text-left">
+                <h3 className="text-3xl font-light text-black mb-2 tracking-tight">Morgan Mackenzie</h3>
+                <p className="text-purple-600 text-xl mb-4 font-light">Founder & CEO</p>
+                <p className="text-gray-600 leading-relaxed font-light">
+                  Former private equity professional and Duke Economics graduate. Launched SimplyAboveAverage after
+                  years of frustration as a 6'2" woman finding clothes that fit. Already signed first NFL athlete client
+                  and building the future of inclusive fashion technology.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Core Team Grid */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* Caroline Sullivan */}
+            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-6 mb-6">
+                <img
+                  src="/placeholder.svg?height=80&width=80&text=Caroline+Sullivan"
+                  alt="Caroline Sullivan"
+                  className="w-20 h-20 rounded-full object-cover border-2 border-blue-200"
+                />
+                <div>
+                  <h3 className="text-2xl font-light text-black tracking-tight">Caroline Sullivan</h3>
+                  <p className="text-blue-600 font-light">Head of Partnerships</p>
+                </div>
+              </div>
+              <p className="text-gray-600 font-light leading-relaxed">
+                Duke grad. Associate Marketing Manager at Constellation.
+              </p>
+            </div>
+
+            {/* Carly Savarino */}
+            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-6 mb-6">
+                <img
+                  src="/placeholder.svg?height=80&width=80&text=Carly+Savarino"
+                  alt="Carly Savarino"
+                  className="w-20 h-20 rounded-full object-cover border-2 border-green-200"
+                />
+                <div>
+                  <h3 className="text-2xl font-light text-black tracking-tight">Carly Savarino</h3>
+                  <p className="text-green-600 font-light">Athlete Stylist</p>
+                </div>
+              </div>
+              <p className="text-gray-600 font-light leading-relaxed">
+                Styled Duke men's and women's basketball players. Focused on tunnel fits and off-court looks.
+              </p>
+            </div>
+          </div>
+
+          {/* NYFW Team */}
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-12 border border-gray-200">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-light text-black mb-4 tracking-tight">NYFW Team</h3>
+              <p className="text-xl text-gray-600 font-light">Elite fashion professionals driving our cultural impact</p>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Olivia Meyer */}
+              <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
+                <img
+                  src="/placeholder.svg?height=80&width=80&text=Olivia+Meyer"
+                  alt="Olivia Meyer"
+                  className="w-20 h-20 rounded-full object-cover border-2 border-purple-200 mx-auto mb-4"
+                />
+                <h4 className="text-xl font-light text-black mb-2 tracking-tight">Olivia Meyer</h4>
+                <p className="text-purple-600 font-light text-sm mb-4">Styling & Curation</p>
+                <div className="text-gray-600 font-light text-sm space-y-1">
+                  <p>Buyer at Bloomingdale's</p>
+                  <p>Former Valentino team</p>
+                  <p>UNESCO & Women @ Dior Mentee Finalist</p>
+                  <p>2024 Fashion Scholarship Fund Chairman's Award Winner</p>
+                </div>
+              </div>
+
+              {/* Tamara Marono */}
+              <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
+                <img
+                  src="/placeholder.svg?height=80&width=80&text=Tamara+Marono"
+                  alt="Tamara Marono"
+                  className="w-20 h-20 rounded-full object-cover border-2 border-pink-200 mx-auto mb-4"
+                />
+                <h4 className="text-xl font-light text-black mb-2 tracking-tight">Tamara Marono</h4>
+                <p className="text-pink-600 font-light text-sm mb-4">Event Production</p>
+                <div className="text-gray-600 font-light text-sm space-y-1">
+                  <p>Designer Apprentice at William Frederick</p>
+                  <p>Louis Vuitton Ambassador</p>
+                  <p>2024 CFDA Scholarship Fund Recipient</p>
+                </div>
+              </div>
+
+              {/* Jaida Patrick */}
+              <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
+                <img
+                  src="/placeholder.svg?height=80&width=80&text=Jaida+Patrick"
+                  alt="Jaida Patrick"
+                  className="w-20 h-20 rounded-full object-cover border-2 border-indigo-200 mx-auto mb-4"
+                />
+                <h4 className="text-xl font-light text-black mb-2 tracking-tight">Jaida Patrick</h4>
+                <p className="text-indigo-600 font-light text-sm mb-4">Styling & Model</p>
+                <div className="text-gray-600 font-light text-sm space-y-1">
+                  <p>Stylist at Akira</p>
+                  <p>ESPN On-Air Talent</p>
+                  <p>Former NCAA basketball player (Duke, Columbia, UMiami)</p>
+                  <p>MS in Media Management & Business, University of Miami</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Form */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">JOIN THE MOVEMENT</h2>
+            <p className="text-xl text-gray-600 font-light">Ready to invest in the future of fashion?</p>
+          </div>
+
+          <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-12 border border-gray-200">
+            <form className="space-y-8">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <Label htmlFor="name" className="text-black text-sm font-light mb-3 block tracking-wide">
+                    Full Name
+                  </Label>
+                  <Input
+                    id="name"
+                    className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="email" className="text-black text-sm font-light mb-3 block tracking-wide">
+                    Email Address
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <Label htmlFor="company" className="text-black text-sm font-light mb-3 block tracking-wide">
+                    Company/Fund
+                  </Label>
+                  <Input
+                    id="company"
+                    className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
+                    placeholder="Optional"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="investment" className="text-black text-sm font-light mb-3 block tracking-wide">
+                    Investment Amount
+                  </Label>
+                  <Input
+                    id="investment"
+                    className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
+                    placeholder="e.g., $25K"
+                  />
+                </div>
+              </div>
+
+              <Button
+                type="submit"
+                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-4 rounded-xl font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide"
+              >
+                Submit Investment Interest
+              </Button>
+            </form>
+
+            <div className="text-center mt-8 pt-8 border-t border-gray-300">
+              <p className="text-gray-500 mb-2 font-light">Questions? Reach out directly:</p>
+              <div className="space-y-1">
+                <p className="text-black font-light">investors@simplyaboveaverage.com</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 bg-gray-50 border-t border-gray-200">
+        <div className="container mx-auto px-6 text-center">
+          <p className="text-gray-500 text-sm font-light">© 2024 simplyaboveaverage — Private Investment Opportunity</p>
+        </div>
+      </footer>
+    </div>
+  )
+}
