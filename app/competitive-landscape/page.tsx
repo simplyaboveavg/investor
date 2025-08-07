@@ -1,9 +1,26 @@
+'use client'
+
+import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
+import { Copy, Check } from "lucide-react"
 
 export default function CompetitiveLandscape() {
+  const [copiedStates, setCopiedStates] = useState<{[key: string]: boolean}>({})
+
+  const copyToClipboard = async (text: string, key: string) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopiedStates(prev => ({ ...prev, [key]: true }))
+      setTimeout(() => {
+        setCopiedStates(prev => ({ ...prev, [key]: false }))
+      }, 2000)
+    } catch (err) {
+      console.error('Failed to copy text: ', err)
+    }
+  }
   return (
     <div className="min-h-screen bg-white text-black font-light">
       <Header currentPage="competition" />
@@ -245,9 +262,22 @@ export default function CompetitiveLandscape() {
                   ShopStyle
                 </a>
               </h3>
-              <p className="text-gray-600 font-light mb-4">
-                Search "36 in inseam jeans"
-              </p>
+              <div className="flex items-center gap-2 mb-4">
+                <p className="text-gray-600 font-light">
+                  Search "36 in inseam jeans"
+                </p>
+                <button
+                  onClick={() => copyToClipboard('36 in inseam jeans', 'shopstyle')}
+                  className="p-1 hover:bg-gray-200 rounded transition-colors"
+                  title="Copy search term"
+                >
+                  {copiedStates.shopstyle ? (
+                    <Check className="w-4 h-4 text-green-600" />
+                  ) : (
+                    <Copy className="w-4 h-4 text-gray-500" />
+                  )}
+                </button>
+              </div>
               <div className="bg-red-100 rounded-xl p-4 border border-red-200">
                 <p className="text-red-700 font-light text-sm">
                   ❌ Inseams don't match what they claim
@@ -261,9 +291,22 @@ export default function CompetitiveLandscape() {
                   Lyst
                 </a>
               </h3>
-              <p className="text-gray-600 font-light mb-4">
-                Try to shop across multiple brands
-              </p>
+              <div className="flex items-center gap-2 mb-4">
+                <p className="text-gray-600 font-light">
+                  Try to shop across multiple brands
+                </p>
+                <button
+                  onClick={() => copyToClipboard('shop across multiple brands', 'lyst')}
+                  className="p-1 hover:bg-gray-200 rounded transition-colors"
+                  title="Copy search term"
+                >
+                  {copiedStates.lyst ? (
+                    <Check className="w-4 h-4 text-green-600" />
+                  ) : (
+                    <Copy className="w-4 h-4 text-gray-500" />
+                  )}
+                </button>
+              </div>
               <div className="bg-orange-100 rounded-xl p-4 border border-orange-200">
                 <p className="text-orange-700 font-light text-sm">
                   ❌ Takes you to brand websites, no unified shopping experience
@@ -277,9 +320,22 @@ export default function CompetitiveLandscape() {
                   Plush.AI
                 </a>
               </h3>
-              <p className="text-gray-600 font-light mb-4">
-                Search for extended sizes
-              </p>
+              <div className="flex items-center gap-2 mb-4">
+                <p className="text-gray-600 font-light">
+                  Search for extended sizes
+                </p>
+                <button
+                  onClick={() => copyToClipboard('jeans size 32, inseam 36', 'plush')}
+                  className="p-1 hover:bg-gray-200 rounded transition-colors"
+                  title="Copy search term"
+                >
+                  {copiedStates.plush ? (
+                    <Check className="w-4 h-4 text-green-600" />
+                  ) : (
+                    <Copy className="w-4 h-4 text-gray-500" />
+                  )}
+                </button>
+              </div>
               <div className="bg-blue-100 rounded-xl p-4 border border-blue-200">
                 <p className="text-blue-700 font-light text-sm">
                   ❌ 10-second load times, inseams in centimeters you have to convert
