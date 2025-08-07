@@ -1,11 +1,61 @@
+'use client'
+
+import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { supabase } from "@/lib/supabase"
 import Link from "next/link"
 
 export default function InvestorSite() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    investment_amount: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState('')
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value
+    })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setError('')
+
+    try {
+      const { error } = await supabase
+        .from('investment_interest')
+        .insert([
+          {
+            full_name: formData.name,
+            email: formData.email,
+            company: formData.company || null,
+            investment_amount: formData.investment_amount || null
+          }
+        ])
+
+      if (error) {
+        throw error
+      }
+
+      setIsSubmitted(true)
+      setFormData({ name: '', email: '', company: '', investment_amount: '' })
+    } catch (error: any) {
+      setError(error.message || 'An error occurred while submitting your interest.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
   return (
     <div className="min-h-screen bg-white text-black font-light">
       <Header />
@@ -380,71 +430,110 @@ export default function InvestorSite() {
             <p className="text-xl text-gray-600 font-light">Ready to invest in the future of fashion?</p>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-12 border border-gray-200">
-            <form className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <Label htmlFor="name" className="text-black text-sm font-light mb-3 block tracking-wide">
-                    Full Name
-                  </Label>
-                  <Input
-                    id="name"
-                    className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
-                    placeholder="Enter your name"
-                  />
+          {isSubmitted ? (
+            <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-12 border border-gray-200 text-center">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-                <div>
-                  <Label htmlFor="email" className="text-black text-sm font-light mb-3 block tracking-wide">
-                    Email Address
-                  </Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
-                    placeholder="your@email.com"
-                  />
-                </div>
+                <h3 className="text-2xl font-light text-black mb-2">Thank You!</h3>
+                <p className="text-gray-600 font-light">
+                  Your investment interest has been submitted successfully. We'll be in touch soon.
+                </p>
               </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <Label htmlFor="company" className="text-black text-sm font-light mb-3 block tracking-wide">
-                    Company/Fund
-                  </Label>
-                  <Input
-                    id="company"
-                    className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
-                    placeholder="Optional"
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="investment" className="text-black text-sm font-light mb-3 block tracking-wide">
-                    Investment Amount
-                  </Label>
-                  <Input
-                    id="investment"
-                    className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
-                    placeholder="e.g., $25K"
-                  />
-                </div>
-              </div>
-
               <Button
-                type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-4 rounded-xl font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide"
+                onClick={() => setIsSubmitted(false)}
+                variant="outline"
+                className="border-gray-300 text-gray-700 hover:bg-gray-50 font-light"
               >
-                Submit Investment Interest
+                Submit Another Interest
               </Button>
-            </form>
+            </div>
+          ) : (
+            <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-12 border border-gray-200">
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <Label htmlFor="name" className="text-black text-sm font-light mb-3 block tracking-wide">
+                      Full Name *
+                    </Label>
+                    <Input
+                      id="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="email" className="text-black text-sm font-light mb-3 block tracking-wide">
+                      Email Address *
+                    </Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                </div>
 
-            <div className="text-center mt-8 pt-8 border-t border-gray-300">
-              <p className="text-gray-500 mb-2 font-light">Questions? Reach out directly:</p>
-              <div className="space-y-1">
-                <p className="text-black font-light">investors@simplyaboveaverage.com</p>
-                
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <Label htmlFor="company" className="text-black text-sm font-light mb-3 block tracking-wide">
+                      Company/Fund
+                    </Label>
+                    <Input
+                      id="company"
+                      value={formData.company}
+                      onChange={handleChange}
+                      className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
+                      placeholder="Optional"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="investment_amount" className="text-black text-sm font-light mb-3 block tracking-wide">
+                      Investment Amount
+                    </Label>
+                    <Input
+                      id="investment_amount"
+                      value={formData.investment_amount}
+                      onChange={handleChange}
+                      className="bg-white/50 border-gray-300 text-black placeholder-gray-500 rounded-xl py-3 focus:border-purple-400 focus:ring-purple-400/20 font-light"
+                      placeholder="e.g., $25K"
+                    />
+                  </div>
+                </div>
+
+                {error && (
+                  <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                    <p className="text-red-600 text-sm font-light">{error}</p>
+                  </div>
+                )}
+
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-4 rounded-xl font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                >
+                  {isSubmitting ? 'Submitting...' : 'Submit Investment Interest'}
+                </Button>
+              </form>
+
+              <div className="text-center mt-8 pt-8 border-t border-gray-300">
+                <p className="text-gray-500 mb-2 font-light">Questions? Reach out directly:</p>
+                <div className="space-y-1">
+                  <p className="text-black font-light">investors@simplyaboveaverage.com</p>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
 
