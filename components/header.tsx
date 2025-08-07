@@ -24,7 +24,7 @@ export function Header({ currentPage }: HeaderProps) {
   const MobileMenu = () => (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
+        <Button variant="ghost" size="icon" className="lg:hidden">
           <Menu className="h-5 w-5" />
           <span className="sr-only">Toggle menu</span>
         </Button>
@@ -55,7 +55,7 @@ export function Header({ currentPage }: HeaderProps) {
   )
 
   const DesktopMenu = () => (
-    <div className="hidden md:flex items-center gap-6">
+    <div className="hidden lg:flex items-center gap-6">
       {navigationLinks.map((link) => (
         <Link key={link.key} href={link.href}>
           <Button 
