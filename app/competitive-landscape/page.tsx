@@ -80,7 +80,8 @@ export default function CompetitiveLandscape() {
 
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 border border-gray-200">
               <h3 className="text-2xl font-light text-black mb-4 tracking-tight">No Personalization</h3>
-              <pNo platform today allows tall or extended-size shoppers to find what fits them across brands with wishlist, alerts, or personalized search. fits them across brands with wishlist, alerts, or personalized search.
+              <p className="text-gray-600 font-light leading-relaxed">
+                No platform today allows tall or extended-size shoppers to find what fits them across brands with wishlist, alerts, or personalized search.
               </p>
             </div>
           </div>
@@ -416,4 +417,3 @@ export default function CompetitiveLandscape() {
     </div>
   )
 }
-© 2024 simplyaboveaverage — Private Investment Opportunity
