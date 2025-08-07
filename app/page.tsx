@@ -1,48 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 import Link from "next/link"
 
 export default function InvestorSite() {
   return (
     <div className="min-h-screen bg-white text-black font-light">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-light tracking-wide text-black">simplyaboveaverage</h1>
-            <div className="flex items-center gap-2">
-              <Link href="/market-opportunity">
-                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
-                  Market
-                </Button>
-              </Link>
-              <Link href="/competitive-landscape">
-                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
-                  Competition
-                </Button>
-              </Link>
-              <Link href="/genai">
-                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
-                  GenAI
-                </Button>
-              </Link>
-              <Link href="/go-to-market">
-                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
-                  GTM
-                </Button>
-              </Link>
-              <Link href="/traction">
-                <Button variant="ghost" className="text-gray-600 hover:text-black font-light text-xs px-2">
-                  Traction
-                </Button>
-              </Link>
-              <div className="text-xs text-gray-500 uppercase tracking-widest font-light">Series Seed</div>
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section - Full Screen */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -482,12 +448,7 @@ export default function InvestorSite() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 bg-gray-50 border-t border-gray-200">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-gray-500 text-sm font-light">© 2024 simplyaboveaverage — Private Investment Opportunity</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
