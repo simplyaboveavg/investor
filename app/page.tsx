@@ -123,25 +123,25 @@ export default function InvestorSite() {
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="group">
               <div className="text-5xl font-extralight text-black mb-2 group-hover:text-purple-600 transition-colors">
-                62%
+                $1.8B
               </div>
               <div className="text-gray-500 text-sm uppercase tracking-wider font-light">
-                {"Don't fit off the rack"}
+                Serviceable Available Market
               </div>
             </div>
             <div className="group">
               <div className="text-5xl font-extralight text-black mb-2 group-hover:text-blue-600 transition-colors">
-                60%
+                156%
               </div>
               <div className="text-gray-500 text-sm uppercase tracking-wider font-light">
-                Return rate for tall shoppers
+                User growth in last 90 days
               </div>
             </div>
             <div className="group">
               <div className="text-5xl font-extralight text-black mb-2 group-hover:text-green-600 transition-colors">
-                $15K
+                83%
               </div>
-              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">Monthly recurring revenue</div>
+              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">Men over 6'3" can't find pants that fit</div>
             </div>
             <div className="group">
               <div className="text-5xl font-extralight text-black mb-2 group-hover:text-yellow-600 transition-colors">
@@ -304,7 +304,7 @@ export default function InvestorSite() {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-shrink-0">
                 <img
-                  src="/placeholder.svg?height=200&width=200&text=Morgan+Mackenzie"
+                  src="/morgan-about.png"
                   alt="Morgan Mackenzie"
                   className="w-32 h-32 rounded-full object-cover border-4 border-purple-200"
                 />
@@ -327,7 +327,7 @@ export default function InvestorSite() {
             <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
               <div className="flex items-center gap-6 mb-6">
                 <img
-                  src="/placeholder.svg?height=80&width=80&text=Caroline+Sullivan"
+                  src="/Caroline.png"
                   alt="Caroline Sullivan"
                   className="w-20 h-20 rounded-full object-cover border-2 border-blue-200"
                 />
@@ -345,7 +345,7 @@ export default function InvestorSite() {
             <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
               <div className="flex items-center gap-6 mb-6">
                 <img
-                  src="/placeholder.svg?height=80&width=80&text=Carly+Savarino"
+                  src="/Carly.jpg"
                   alt="Carly Savarino"
                   className="w-20 h-20 rounded-full object-cover border-2 border-green-200"
                 />
@@ -371,7 +371,7 @@ export default function InvestorSite() {
               {/* Olivia Meyer */}
               <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
                 <img
-                  src="/placeholder.svg?height=80&width=80&text=Olivia+Meyer"
+                  src="/Olivia.jpg"
                   alt="Olivia Meyer"
                   className="w-20 h-20 rounded-full object-cover border-2 border-purple-200 mx-auto mb-4"
                 />
@@ -388,7 +388,7 @@ export default function InvestorSite() {
               {/* Tamara Marono */}
               <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
                 <img
-                  src="/placeholder.svg?height=80&width=80&text=Tamara+Marono"
+                  src="/Tamy.jpg"
                   alt="Tamara Marono"
                   className="w-20 h-20 rounded-full object-cover border-2 border-pink-200 mx-auto mb-4"
                 />
@@ -404,7 +404,7 @@ export default function InvestorSite() {
               {/* Jaida Patrick */}
               <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
                 <img
-                  src="/placeholder.svg?height=80&width=80&text=Jaida+Patrick"
+                  src="/Jaida4.jpg"
                   alt="Jaida Patrick"
                   className="w-20 h-20 rounded-full object-cover border-2 border-indigo-200 mx-auto mb-4"
                 />

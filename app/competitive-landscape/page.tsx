@@ -141,38 +141,6 @@ export default function CompetitiveLandscape() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 border border-gray-200">
-              <h3 className="text-xl font-light text-black mb-4">Universal Standard</h3>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div><span className="font-medium">Focus:</span> DTC apparel brand</div>
-                <div><span className="font-medium">Fit Filters:</span> ❌ None</div>
-                <div><span className="font-medium">Extended Sizes:</span> ✅ 00-40</div>
-                <div><span className="font-medium">Personalization:</span> ❌ Static catalog</div>
-                <div><span className="font-medium">Styling:</span> ❌ None</div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-gray-200">
-              <h3 className="text-xl font-light text-black mb-4">American Tall</h3>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div><span className="font-medium">Focus:</span> DTC brand for tall men/women</div>
-                <div><span className="font-medium">Fit Filters:</span> ❌ None</div>
-                <div><span className="font-medium">Extended Sizes:</span> ✅ 6'3"+ focus</div>
-                <div><span className="font-medium">Personalization:</span> ❌ Static</div>
-                <div><span className="font-medium">Styling:</span> ❌ None</div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-gray-200">
-              <h3 className="text-xl font-light text-black mb-4">Pinterest / LTK</h3>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div><span className="font-medium">Focus:</span> Inspiration boards</div>
-                <div><span className="font-medium">Fit Filters:</span> ❌ None</div>
-                <div><span className="font-medium">Extended Sizes:</span> ❌ Not filtered</div>
-                <div><span className="font-medium">Personalization:</span> ❌ None</div>
-                <div><span className="font-medium">Styling:</span> ✅ Looks only</div>
-              </div>
-            </div>
           </div>
 
           {/* Desktop table */}
@@ -213,30 +181,6 @@ export default function CompetitiveLandscape() {
                     <td className="p-6"><span className="text-red-500">❌ Weak in tall/plus</span></td>
                     <td className="p-6"><span className="text-green-600">✅ Some styling prompts</span></td>
                     <td className="p-6"><span className="text-green-600">✅ But not size-specific</span></td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="p-6 font-medium text-black">Universal Standard</td>
-                    <td className="p-6 text-gray-600">DTC apparel brand</td>
-                    <td className="p-6"><span className="text-red-500">❌ None</span></td>
-                    <td className="p-6"><span className="text-green-600">✅ 00-40</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ Static catalog</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ None</span></td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="p-6 font-medium text-black">American Tall</td>
-                    <td className="p-6 text-gray-600">DTC brand for tall men/women</td>
-                    <td className="p-6"><span className="text-red-500">❌ None</span></td>
-                    <td className="p-6"><span className="text-green-600">✅ 6'3"+ focus</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ Static</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ None</span></td>
-                  </tr>
-                  <tr>
-                    <td className="p-6 font-medium text-black">Pinterest / LTK</td>
-                    <td className="p-6 text-gray-600">Inspiration boards</td>
-                    <td className="p-6"><span className="text-red-500">❌ None</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ Not filtered</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ None</span></td>
-                    <td className="p-6"><span className="text-green-600">✅ Looks only</span></td>
                   </tr>
                 </tbody>
               </table>
