@@ -182,87 +182,6 @@ export default function GenAI() {
         </div>
       </section>
 
-      {/* Intellectual Property & Data Moat */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
-              INTELLECTUAL PROPERTY
-            </h2>
-            <p className="text-xl text-gray-600 font-light">Our defensible data moat</p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h3 className="text-3xl font-light text-black mb-6 tracking-tight">Proprietary Data Pipelines</h3>
-              <p className="text-gray-600 font-light leading-relaxed mb-8">
-                We've built proprietary data pipelines that ingest, clean, and structure product information from over 100+ extended-size brands — mapping inconsistent size formats into a unified, searchable experience.
-              </p>
-              <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
-                <h4 className="text-xl font-light text-black mb-4">Size Format Examples:</h4>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3 border border-gray-200">
-                      <span className="text-gray-500">US:</span> 2XLXT
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-gray-200">
-                      <span className="text-gray-500">UK:</span> Size 22
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3 border border-gray-200">
-                      <span className="text-gray-500">EU:</span> 36.5
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-gray-200">
-                      <span className="text-gray-500">Pants:</span> 38 x 38
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-light text-black mb-6 tracking-tight">Our System Handles:</h3>
-              <div className="space-y-4">
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h4 className="font-medium text-black mb-2">Complex Inseam + Waist Combinations</h4>
-                  <p className="text-gray-600 font-light text-sm">Standardizing measurements across brands</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h4 className="font-medium text-black mb-2">International Sizing</h4>
-                  <p className="text-gray-600 font-light text-sm">EU, UK, Japan, and regional variations</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h4 className="font-medium text-black mb-2">Brand-Specific Naming</h4>
-                  <p className="text-gray-600 font-light text-sm">Unique conventions and terminology</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h4 className="font-medium text-black mb-2">Hidden Fit Metadata</h4>
-                  <p className="text-gray-600 font-light text-sm">Scraped from product descriptions</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Key Differentiator */}
-          <div className="bg-black rounded-3xl p-12 border border-gray-800 text-center">
-            <h3 className="text-3xl font-light text-white mb-6 tracking-tight">The Key Differentiator</h3>
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="text-left">
-                <h4 className="text-xl font-light text-red-400 mb-4">Other Platforms:</h4>
-                <p className="text-gray-300 font-light">Surface clothes</p>
-              </div>
-              <div className="text-left">
-                <h4 className="text-xl font-light text-green-400 mb-4">simplyaboveaverage:</h4>
-                <p className="text-gray-300 font-light">Surface what fits — across global brands and extended-size ranges no one else has prioritized</p>
-              </div>
-            </div>
-            <p className="text-xl text-gray-300 font-light">
-              This infrastructure powers personalized discovery, styling, and fit-based search across a massively fragmented category
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Defensible Moats */}
       <section className="py-20 bg-gray-50">
@@ -303,7 +222,7 @@ export default function GenAI() {
           <div className="mt-12 bg-gradient-to-r from-purple-100 to-blue-100 rounded-3xl p-12 border border-gray-200 text-center">
             <h3 className="text-3xl font-light text-black mb-6 tracking-tight">Network Effects</h3>
             <p className="text-xl text-gray-600 font-light max-w-4xl mx-auto">
-              As we add more users, brands, and data points, our AI becomes smarter, our recommendations more accurate, and our moat deeper. This creates a flywheel effect that's nearly impossible for competitors to replicate.
+              As we add more users, brands, and data points, our AI becomes smarter, our recommendations more accurate, and our moat deeper. This creates a flywheel effect in the overlooked extended-size market where we're building first-mover advantage.
             </p>
           </div>
         </div>
