@@ -249,6 +249,133 @@ export default function Traction() {
         </div>
       </section>
 
+
+      {/* Partnerships & Cultural Momentum */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
+              CULTURAL MOMENTUM
+            </h2>
+            <p className="text-xl text-gray-600 font-light">Building brand authority and industry presence</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            {/* NYFW */}
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 border border-gray-200">
+              <div className="flex items-center gap-4 mb-6">
+                
+                <h3 className="text-3xl font-light text-black tracking-tight">NYFW Debut</h3>
+              </div>
+              
+              <div className="space-y-4 mb-6">
+                <div className="bg-white rounded-xl p-4 border border-gray-200">
+                  <h4 className="font-medium text-black mb-2">September 14 Official Debut</h4>
+                  <p className="text-gray-600 font-light text-sm">Hosting, producing, casting, and styling original runway show</p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border border-gray-200">
+                  <h4 className="font-medium text-black mb-2">Theme: "Tunnel Fits"</h4>
+                  <p className="text-gray-600 font-light text-sm">Celebrating how athletes are shaping fashion culture</p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border border-gray-200">
+                  <h4 className="font-medium text-black mb-2">Brand Partners</h4>
+                  <p className="text-gray-600 font-light text-sm">Avant Parc and Reps Capital</p>
+                </div>
+              </div>
+              
+              <p className="text-purple-600 font-light text-center">
+                Aligning perfectly with our mission at the intersection of sports and fashion
+              </p>
+            </div>
+
+            {/* NFL Partnership */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 border border-gray-200">
+              <div className="flex items-center gap-4 mb-6">
+                
+                <h3 className="text-3xl font-light text-black tracking-tight">NFL Partnership</h3>
+              </div>
+              
+              <div className="text-center mb-6">
+                <div className="text-6xl font-extralight text-green-600 mb-4">✓</div>
+                <h4 className="text-2xl font-light text-black mb-4">NFL Rookie Signed</h4>
+                <p className="text-gray-600 font-light">
+                  First professional athlete signed to our Styling Division
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
+                <h4 className="text-xl font-light text-black mb-3">Strategic Validation</h4>
+                <p className="text-gray-600 font-light text-sm">
+                  Validates our positioning at the intersection of sports, fashion, and fit — proving our unique market position
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Mission Alignment */}
+          <div className="bg-black rounded-3xl p-12 border border-gray-800 text-center">
+            <h3 className="text-3xl font-light text-white mb-8 tracking-tight">Mission Alignment</h3>
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <div className="text-4xl font-extralight text-purple-400 mb-4">Sports</div>
+                <p className="text-gray-300 font-light text-sm">NFL athlete partnerships</p>
+              </div>
+              <div>
+                <div className="text-4xl font-extralight text-blue-400 mb-4">Fashion</div>
+                <p className="text-gray-300 font-light text-sm">NYFW runway debut</p>
+              </div>
+              <div>
+                <div className="text-4xl font-extralight text-green-400 mb-4">Fit</div>
+                <p className="text-gray-300 font-light text-sm">Extended-size focus</p>
+              </div>
+            </div>
+            <p className="text-xl text-gray-300 font-light">
+              Every partnership and cultural moment reinforces our unique position in the market
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Insights */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
+              KEY INSIGHTS
+            </h2>
+            <p className="text-xl text-gray-600 font-light">What our traction tells us</p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm text-center">
+              
+              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Product-Market Fit</h3>
+              <p className="text-gray-600 font-light">
+                20-30% returning users without engagement loops proves strong problem-solution fit
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm text-center">
+              
+              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Scalable Growth</h3>
+              <p className="text-gray-600 font-light">
+                Multiple viable marketing strategies validated through testing
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm text-center">
+              
+              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Cultural Authority</h3>
+              <p className="text-gray-600 font-light">
+                NYFW debut and NFL partnerships establish credibility in both fashion and sports
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* TikTok Traction & Target Demo Feedback */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
@@ -551,132 +678,6 @@ export default function Traction() {
         </div>
       </section>
 
-      {/* Partnerships & Cultural Momentum */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
-              CULTURAL MOMENTUM
-            </h2>
-            <p className="text-xl text-gray-600 font-light">Building brand authority and industry presence</p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            {/* NYFW */}
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 border border-gray-200">
-              <div className="flex items-center gap-4 mb-6">
-                
-                <h3 className="text-3xl font-light text-black tracking-tight">NYFW Debut</h3>
-              </div>
-              
-              <div className="space-y-4 mb-6">
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h4 className="font-medium text-black mb-2">September 14 Official Debut</h4>
-                  <p className="text-gray-600 font-light text-sm">Hosting, producing, casting, and styling original runway show</p>
-                </div>
-                
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h4 className="font-medium text-black mb-2">Theme: "Tunnel Fits"</h4>
-                  <p className="text-gray-600 font-light text-sm">Celebrating how athletes are shaping fashion culture</p>
-                </div>
-                
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h4 className="font-medium text-black mb-2">Brand Partners</h4>
-                  <p className="text-gray-600 font-light text-sm">Avant Parc and Reps Capital</p>
-                </div>
-              </div>
-              
-              <p className="text-purple-600 font-light text-center">
-                Aligning perfectly with our mission at the intersection of sports and fashion
-              </p>
-            </div>
-
-            {/* NFL Partnership */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 border border-gray-200">
-              <div className="flex items-center gap-4 mb-6">
-                
-                <h3 className="text-3xl font-light text-black tracking-tight">NFL Partnership</h3>
-              </div>
-              
-              <div className="text-center mb-6">
-                <div className="text-6xl font-extralight text-green-600 mb-4">✓</div>
-                <h4 className="text-2xl font-light text-black mb-4">NFL Rookie Signed</h4>
-                <p className="text-gray-600 font-light">
-                  First professional athlete signed to our Styling Division
-                </p>
-              </div>
-              
-              <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
-                <h4 className="text-xl font-light text-black mb-3">Strategic Validation</h4>
-                <p className="text-gray-600 font-light text-sm">
-                  Validates our positioning at the intersection of sports, fashion, and fit — proving our unique market position
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Mission Alignment */}
-          <div className="bg-black rounded-3xl p-12 border border-gray-800 text-center">
-            <h3 className="text-3xl font-light text-white mb-8 tracking-tight">Mission Alignment</h3>
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              <div>
-                <div className="text-4xl font-extralight text-purple-400 mb-4">Sports</div>
-                <p className="text-gray-300 font-light text-sm">NFL athlete partnerships</p>
-              </div>
-              <div>
-                <div className="text-4xl font-extralight text-blue-400 mb-4">Fashion</div>
-                <p className="text-gray-300 font-light text-sm">NYFW runway debut</p>
-              </div>
-              <div>
-                <div className="text-4xl font-extralight text-green-400 mb-4">Fit</div>
-                <p className="text-gray-300 font-light text-sm">Extended-size focus</p>
-              </div>
-            </div>
-            <p className="text-xl text-gray-300 font-light">
-              Every partnership and cultural moment reinforces our unique position in the market
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Insights */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
-              KEY INSIGHTS
-            </h2>
-            <p className="text-xl text-gray-600 font-light">What our traction tells us</p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm text-center">
-              
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Product-Market Fit</h3>
-              <p className="text-gray-600 font-light">
-                20-30% returning users without engagement loops proves strong problem-solution fit
-              </p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm text-center">
-              
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Scalable Growth</h3>
-              <p className="text-gray-600 font-light">
-                Multiple viable marketing strategies validated through testing
-              </p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm text-center">
-              
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Cultural Authority</h3>
-              <p className="text-gray-600 font-light">
-                NYFW debut and NFL partnerships establish credibility in both fashion and sports
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-4xl text-center">
@@ -687,9 +688,9 @@ export default function Traction() {
             Join us as we scale this proven traction into market dominance
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/#investment-terms">
+            <a href="/#apply-to-invest">
               <Button className="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide">
-                View Investment Terms
+                Join the Journey
               </Button>
             </a>
             <Link href="/go-to-market">

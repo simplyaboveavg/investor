@@ -33,229 +33,8 @@ export default function GoToMarket() {
         </div>
       </section>
 
-      {/* Social Media Marketing */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
-              SOCIAL MEDIA MARKETING
-            </h2>
-            <p className="text-xl text-gray-600 font-light">Our primary growth channel</p>
-          </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            {/* Instagram */}
-            <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-8 border border-gray-200">
-              <div className="flex items-center gap-4 mb-6">
-                
-                <h3 className="text-3xl font-light text-black tracking-tight">Instagram</h3>
-              </div>
-              
-              <h4 className="text-xl font-light text-black mb-4">3 Content Series:</h4>
-              <div className="space-y-4 mb-6">
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h5 className="font-medium text-black mb-2">"If I had a closet full of..."</h5>
-                  <p className="text-gray-600 font-light text-sm">Aspirational content showcasing dream wardrobes</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h5 className="font-medium text-black mb-2">"simplyaboveaverage or simply not"</h5>
-                  <p className="text-gray-600 font-light text-sm">Brand reviews and recommendations</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <h5 className="font-medium text-black mb-2">"Growing to 6' is hard. Finding clothes shouldn't be"</h5>
-                  <p className="text-gray-600 font-light text-sm">Most shareable content, converts users to followers and site users</p>
-                </div>
-              </div>
-            </div>
 
-            {/* TikTok */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 border border-gray-200">
-              <div className="flex items-center gap-4 mb-6">
-                
-                <h3 className="text-3xl font-light text-black tracking-tight">TikTok</h3>
-              </div>
-              
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-xl font-light text-black mb-3">Organic Content:</h4>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                      <span className="text-gray-600 font-light text-sm">"Tall girl problems" relatable content</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                      <span className="text-gray-600 font-light text-sm">Styling hacks and tips</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                      <span className="text-gray-600 font-light text-sm">"Welcome to the 6ft plus club" community building</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div>
-                  <h4 className="text-xl font-light text-black mb-3">Paid Strategy:</h4>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                      <span className="text-gray-600 font-light text-sm">Boosting viral content</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                      <span className="text-gray-600 font-light text-sm">Tall influencer partnerships (Tyler, Gabbi)</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SEO & Community Growth */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* SEO */}
-            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
-              <div className="flex items-center gap-4 mb-6">
-                
-                <h3 className="text-3xl font-light text-black tracking-tight">SEO Strategy</h3>
-              </div>
-              
-              <div className="space-y-4 mb-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light">Blog posts and content optimization</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light">Meta descriptions and alt-text</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light">Website image optimization</span>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
-                <h4 className="text-xl font-light text-black mb-3">Results:</h4>
-                <div className="text-center">
-                  <div className="text-4xl font-extralight text-green-600 mb-2">#1</div>
-                  <p className="text-gray-600 font-light text-sm">Google ranking for "simplyaboveaverage" and "simply above average"</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Community Growth */}
-            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
-              <div className="flex items-center gap-4 mb-6">
-                
-                <h3 className="text-3xl font-light text-black tracking-tight">Community Growth</h3>
-              </div>
-              
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-xl font-light text-black mb-3">Facebook Groups:</h4>
-                  <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
-                    <div className="text-center mb-3">
-                      <div className="text-3xl font-extralight text-blue-600">100+</div>
-                      <p className="text-gray-600 font-light text-sm">Comments and likes on single post</p>
-                    </div>
-                    <p className="text-gray-600 font-light text-sm text-center">Drove significant user spike (June bump)</p>
-                  </div>
-                </div>
-                
-                <div>
-                  <h4 className="text-xl font-light text-black mb-3">Guerrilla Marketing:</h4>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                      <span className="text-gray-600 font-light text-sm">Business cards promoting pass-it-forward</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                      <span className="text-gray-600 font-light text-sm">"Pass to the next simplyaboveaverage person"</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Media & PR Strategy */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
-              MEDIA & PR STRATEGY
-            </h2>
-            <p className="text-xl text-gray-600 font-light">Building authority in the tall fashion space</p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 border border-gray-200">
-              
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">NYFW Show Leverage</h3>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Post-show articles</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Media interviews</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Press coverage</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 border border-gray-200">
-              
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Content Opportunities</h3>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Substack publications</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Podcast appearances</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Fashion media features</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 border border-gray-200">
-              
-              <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Authority Building</h3>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Thought leadership</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Fashion × Sports merge</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600 font-light text-sm">Professional athlete styling</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Athlete Styling as Marketing */}
       <section className="py-20 bg-gray-50">
@@ -346,12 +125,12 @@ export default function GoToMarket() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-gray-200 text-center">
               <div className="text-5xl font-extralight text-purple-600 mb-4">#1</div>
-              <p className="text-gray-600 font-light">Google ranking for brand searches</p>
+              <p className="text-gray-600 font-light">Google ranking as a result of our current SEO strategy</p>
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-gray-200 text-center">
               <div className="text-5xl font-extralight text-blue-600 mb-4">100+</div>
-              <p className="text-gray-600 font-light">Engagement per Facebook post</p>
+              <p className="text-gray-600 font-light">Comments from our target demo per Facebook post</p>
             </div>
 
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-gray-200 text-center">
@@ -361,7 +140,7 @@ export default function GoToMarket() {
 
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 border border-gray-200 text-center">
               <div className="text-5xl font-extralight text-yellow-600 mb-4">NFL</div>
-              <p className="text-gray-600 font-light">Athletes already styled and signed</p>
+              <p className="text-gray-600 font-light">Athletes already signed</p>
             </div>
           </div>
         </div>
@@ -377,17 +156,17 @@ export default function GoToMarket() {
             Join us in executing the most comprehensive go-to-market plan in extended-size fashion
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/">
+            <a href="/#apply-to-invest">
               <Button className="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide">
-                View Investment Terms
+                Join the Journey
               </Button>
-            </Link>
-            <Link href="/genai">
+            </a>
+            <Link href="/traction">
               <Button
                 variant="outline"
                 className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-full font-light text-lg bg-transparent tracking-wide"
               >
-                See Our AI Advantage
+                See Our Early Momentum
               </Button>
             </Link>
           </div>

@@ -94,100 +94,6 @@ export default function CompetitiveLandscape() {
         </div>
       </section>
 
-      {/* Competitive Comparison Table */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
-              HEAD-TO-HEAD COMPARISON
-            </h2>
-            <p className="text-xl text-gray-600 font-light">How we stack up against the competition</p>
-          </div>
-
-          {/* Mobile-friendly cards for smaller screens */}
-          <div className="lg:hidden space-y-6">
-            {/* SAA Card */}
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-6 border-2 border-purple-200">
-              <h3 className="text-xl font-light text-black mb-4">SimplyAboveAverage</h3>
-              <div className="space-y-3 text-sm">
-                <div><span className="font-medium">Focus:</span> Search + styling for extended sizes</div>
-                <div><span className="font-medium">Fit Filters:</span> ✅ Smart filters (inseam, rise, etc.)</div>
-                <div><span className="font-medium">Extended Sizes:</span> ✅ 1X-8XLT, 26-80, 4-18 shoes</div>
-                <div><span className="font-medium">Personalization:</span> ✅ User profiles, wishlist, fit alerts</div>
-                <div><span className="font-medium">Styling:</span> ✅ Athlete styling, "get the look"</div>
-              </div>
-            </div>
-
-            {/* Competitors */}
-            <div className="bg-white rounded-2xl p-6 border border-gray-200">
-              <h3 className="text-xl font-light text-black mb-4">Google Shopping</h3>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div><span className="font-medium">Focus:</span> General product search</div>
-                <div><span className="font-medium">Fit Filters:</span> ❌ Basic only</div>
-                <div><span className="font-medium">Extended Sizes:</span> ❌ Inconsistent</div>
-                <div><span className="font-medium">Personalization:</span> ❌ None</div>
-                <div><span className="font-medium">Styling:</span> ❌ None</div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-gray-200">
-              <h3 className="text-xl font-light text-black mb-4">Amazon Personal Shopper</h3>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div><span className="font-medium">Focus:</span> General consumer shopping</div>
-                <div><span className="font-medium">Fit Filters:</span> ✅ Limited</div>
-                <div><span className="font-medium">Extended Sizes:</span> ❌ Weak in tall/plus</div>
-                <div><span className="font-medium">Personalization:</span> ✅ Some styling prompts</div>
-                <div><span className="font-medium">Styling:</span> ✅ But not size-specific</div>
-              </div>
-            </div>
-
-          </div>
-
-          {/* Desktop table */}
-          <div className="hidden lg:block overflow-x-auto">
-            <div className="bg-white rounded-3xl border border-gray-200 shadow-sm overflow-hidden">
-              <table className="w-full">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="text-left p-6 font-light text-black">Platform</th>
-                    <th className="text-left p-6 font-light text-black">Focus</th>
-                    <th className="text-left p-6 font-light text-black">Fit Filters</th>
-                    <th className="text-left p-6 font-light text-black">Extended Sizes</th>
-                    <th className="text-left p-6 font-light text-black">Personalization</th>
-                    <th className="text-left p-6 font-light text-black">Styling</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-gradient-to-r from-purple-50 to-blue-50 border-2 border-purple-200">
-                    <td className="p-6 font-medium text-black">SimplyAboveAverage</td>
-                    <td className="p-6 text-gray-700">Search + simplyaboveaverageed sizes</td>
-                    <td className="p-6"><span className="text-green-600">✅ Smart filters (inseam, rise, etc.)</span></td>
-                    <td className="p-6"><span className="text-green-600">✅ 1X-8XLT, 26-80, 4-18 shoes</span></td>
-                    <td className="p-6"><span className="text-green-600">✅ User profiles, wishlist, fit alerts</span></td>
-                    <td className="p-6"><span className="text-green-600">✅ Athlete styling, "get the look"</span></td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="p-6 font-medium text-black">Google Shopping</td>
-                    <td className="p-6 text-gray-600">General product search</td>
-                    <td className="p-6"><span className="text-red-500">❌ Basic only</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ Inconsistent</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ None</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ None</span></td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="p-6 font-medium text-black">Amazon Personal Shopper</td>
-                    <td className="p-6 text-gray-600">General consumer shopping</td>
-                    <td className="p-6"><span className="text-green-600">✅ Limited</span></td>
-                    <td className="p-6"><span className="text-red-500">❌ Weak in tall/plus</span></td>
-                    <td className="p-6"><span className="text-green-600">✅ Some styling prompts</span></td>
-                    <td className="p-6"><span className="text-green-600">✅ But not size-specific</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Test Our Competitors */}
       <section className="py-20 bg-white">
@@ -311,69 +217,6 @@ export default function CompetitiveLandscape() {
         </div>
       </section>
 
-      {/* Our Unique Position */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
-              OUR UNIQUE POSITION
-            </h2>
-            <p className="text-xl text-gray-600 font-light">Why we're building something completely different</p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-                <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Fit-First Technology</h3>
-                <p className="text-gray-600 font-light">
-                  Smart filters for inseam, rise, shoulder width, and torso length — the attributes that actually matter for fit, not just aesthetics.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-                <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Cultural Storytelling</h3>
-                <p className="text-gray-600 font-light">
-                  Athlete styling, tunnel fits, NYFW shows — we're not just selling clothes, we're shaping culture and giving extended-size shoppers representation.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-                <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Cross-Brand Discovery</h3>
-                <p className="text-gray-600 font-light">
-                  The only platform that lets you search, compare, and shop extended sizes across multiple brands with personalized recommendations and fit alerts.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-3xl p-12 border border-gray-200">
-              <h3 className="text-3xl font-light text-black mb-8 tracking-tight text-center">The Market Gap</h3>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-4 h-4 bg-red-500 rounded-full flex-shrink-0"></div>
-                  <p className="text-gray-600 font-light">No cross-brand extended-size discovery platform exists</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-4 h-4 bg-red-500 rounded-full flex-shrink-0"></div>
-                  <p className="text-gray-600 font-light">No platform combines fit-tech with cultural influence</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-4 h-4 bg-red-500 rounded-full flex-shrink-0"></div>
-                  <p className="text-gray-600 font-light">No personalized search with wishlist and fit alerts</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-4 h-4 bg-red-500 rounded-full flex-shrink-0"></div>
-                  <p className="text-gray-600 font-light">No athlete-backed styling for extended sizes</p>
-                </div>
-              </div>
-              <div className="mt-8 pt-8 border-t border-gray-300 text-center">
-                <p className="text-xl text-black font-light">
-                  <strong>simplyaboveaverage is first to market</strong> in this massive white space
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-white">
@@ -385,17 +228,17 @@ export default function CompetitiveLandscape() {
             Join us in building the first true extended-size discovery platform
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/">
+            <a href="/#apply-to-invest">
               <Button className="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide">
-                View Investment Terms
+                Join the Journey
               </Button>
-            </Link>
-            <Link href="/market-opportunity">
+            </a>
+            <Link href="/genai">
               <Button
                 variant="outline"
                 className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-full font-light text-lg bg-transparent tracking-wide"
               >
-                Market Analysis
+                See Our AI Advantage
               </Button>
             </Link>
           </div>

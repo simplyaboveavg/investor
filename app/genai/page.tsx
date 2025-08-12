@@ -319,17 +319,17 @@ export default function GenAI() {
             Join us in building the most advanced extended-size discovery platform
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/">
+            <a href="/#apply-to-invest">
               <Button className="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide">
-                View Investment Terms
+                Join the Journey
               </Button>
-            </Link>
-            <Link href="/competitive-landscape">
+            </a>
+            <Link href="/go-to-market">
               <Button
                 variant="outline"
                 className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-full font-light text-lg bg-transparent tracking-wide"
               >
-                See Competition
+                See Growth Strategy
               </Button>
             </Link>
           </div>

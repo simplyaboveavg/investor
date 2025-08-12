@@ -122,14 +122,6 @@ export default function InvestorSite() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="group">
-              <div className="text-5xl font-extralight text-black mb-2 group-hover:text-purple-600 transition-colors">
-                $1.8B
-              </div>
-              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">
-                Serviceable Available Market
-              </div>
-            </div>
-            <div className="group">
               <div className="text-5xl font-extralight text-black mb-2 group-hover:text-blue-600 transition-colors">
                 156%
               </div>
@@ -148,6 +140,14 @@ export default function InvestorSite() {
                 NFL
               </div>
               <div className="text-gray-500 text-sm uppercase tracking-wider font-light">Athletes signed</div>
+            </div>
+            <div className="group">
+              <div className="text-5xl font-extralight text-black mb-2 group-hover:text-purple-600 transition-colors">
+                $1.8B
+              </div>
+              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">
+                Serviceable Available Market
+              </div>
             </div>
           </div>
         </div>
@@ -198,7 +198,7 @@ export default function InvestorSite() {
               <div className="relative z-10">
                 <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Cultural Capital</h3>
                 <p className="text-gray-600 leading-relaxed font-light">
-                  Athlete-led cap table. Culture-shaping clients. NYFW shows that set the tone for what athletes wear on
+                  Athlete-led cap table. Culture-shaping clients. NYFW show that sets the tone for what athletes wear on
                   and off the court.
                 </p>
               </div>
@@ -303,9 +303,7 @@ export default function InvestorSite() {
                 <h3 className="text-3xl font-light text-black mb-2 tracking-tight">Morgan Mackenzie</h3>
                 <p className="text-purple-600 text-xl mb-4 font-light">Founder & CEO</p>
                 <p className="text-gray-600 leading-relaxed font-light">
-                  Former private equity professional and Duke Economics graduate. Launched SimplyAboveAverage after
-                  years of frustration as a 6'2" woman finding clothes that fit. Already signed first NFL athlete client
-                  and building the future of inclusive fashion technology.
+                  Ex-Goldman Sachs. Ex-AWS. Duke Economics. 6'2". Self-taught developer, built the backend from scratch and shipped the MVP of simplyaboveaverage in 90 days.
                 </p>
               </div>
             </div>
@@ -413,7 +411,7 @@ export default function InvestorSite() {
       </section>
 
       {/* CTA Form */}
-      <section className="py-20 bg-white">
+      <section id="apply-to-invest" className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">JOIN THE MOVEMENT</h2>

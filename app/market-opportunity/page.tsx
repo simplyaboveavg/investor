@@ -199,17 +199,19 @@ export default function MarketOpportunity() {
             Join us in building the future of fit-first fashion discovery
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/">
+            <a href="/#apply-to-invest">
               <Button className="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide">
-                View Investment Terms
+                Join the Journey
+              </Button>
+            </a>
+            <Link href="/competitive-landscape">
+              <Button
+                variant="outline"
+                className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-full font-light text-lg bg-transparent tracking-wide"
+              >
+                See Competition
               </Button>
             </Link>
-            <Button
-              variant="outline"
-              className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-full font-light text-lg bg-transparent tracking-wide"
-            >
-              Download Market Report
-            </Button>
           </div>
         </div>
       </section>
