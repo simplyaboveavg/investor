@@ -94,9 +94,9 @@ export default function InvestorSite() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#investment-terms">
+            <a href="#team">
               <Button className="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 tracking-wide">
-                View Investment Terms
+                Meet the Team
               </Button>
             </a>
             <a href="https://youtube.com/shorts/qtandMPSu8I?feature=share" target="_blank" rel="noopener noreferrer">
@@ -171,7 +171,7 @@ export default function InvestorSite() {
               <div className="absolute inset-0 bg-gradient-to-br from-gray-50/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10">
                 <h3 className="text-2xl font-light text-black mb-4 tracking-tight">
-                  Search Engine for the Underserved
+                  AI-Powered Search Engine
                 </h3>
                 <p className="text-gray-600 leading-relaxed font-light">
                   Google Shopping for extended sizes. AI-powered platform connecting hard-to-fit bodies with brands that
@@ -196,7 +196,7 @@ export default function InvestorSite() {
             <div className="group relative bg-gray-100 rounded-3xl p-8 border border-gray-300 hover:border-gray-400 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-xl">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-200/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10">
-                <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Cultural Empire</h3>
+                <h3 className="text-2xl font-light text-black mb-4 tracking-tight">Cultural Capital</h3>
                 <p className="text-gray-600 leading-relaxed font-light">
                   Athlete-led cap table. Culture-shaping clients. NYFW shows that set the tone for what athletes wear on
                   and off the court.
@@ -246,53 +246,43 @@ export default function InvestorSite() {
       </section>
 
       {/* Investment Terms */}
-      <section id="investment-terms" className="py-20 bg-white">
+      <section id="investment-terms" className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-extralight text-black mb-4 tracking-tight">
               INVESTMENT OPPORTUNITY
             </h2>
             <p className="text-xl text-gray-600 font-light">Join us in reshaping fashion</p>
           </div>
 
-          <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-3xl p-12 border border-gray-200">
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="text-5xl font-extralight text-black mb-4">$500K</div>
-                <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Raising via SAFE</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-extralight text-black mb-4">$8M</div>
-                <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Post-Money Cap</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-extralight text-black mb-4">0%</div>
-                <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Discount</div>
-              </div>
-            </div>
-
-            <div className="mb-8">
-              <div className="flex justify-between items-center mb-4">
-                <span className="text-xl text-black font-light">$125K committed</span>
-                <span className="text-gray-500 font-light">25%</span>
-              </div>
-              <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                <div className="bg-gradient-to-r from-purple-500 to-blue-500 h-full w-1/4 rounded-full"></div>
-              </div>
-            </div>
-
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
-              <p className="text-gray-600 mb-8 font-light">
-                Funds will be allocated to scaling our engineering team, fine-tuning our proprietary model on extended sizing and fit data, and launching targeted user acquisition campaigns.
-
-              </p>
+              <div className="text-4xl font-extralight text-black mb-2">$500K</div>
+              <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Raising via SAFE</div>
             </div>
+            <div className="text-center">
+              <div className="text-4xl font-extralight text-black mb-2">$8M</div>
+              <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Post-Money Cap</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-extralight text-black mb-2">0%</div>
+              <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Discount</div>
+            </div>
+          </div>
+
+          <div className="text-center space-y-4">
+            <p className="text-gray-600 font-light text-lg">
+              Available to a select group of strategic partners who share our vision for reshaping fashion.
+            </p>
+            <p className="text-gray-600 font-light">
+              Capital will be deployed to scale engineering, enhance our proprietary fit-data platform, and accelerate user acquisition.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-gray-50">
+      <section id="team" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">LEADERSHIP TEAM</h2>
