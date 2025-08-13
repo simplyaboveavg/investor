@@ -260,7 +260,7 @@ export default function InvestorSite() {
               <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Raising via SAFE</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-extralight text-black mb-2">$8M</div>
+              <div className="text-4xl font-extralight text-black mb-2">$6M</div>
               <div className="text-gray-500 uppercase tracking-wider font-light text-sm">Post-Money Cap</div>
             </div>
             <div className="text-center">
