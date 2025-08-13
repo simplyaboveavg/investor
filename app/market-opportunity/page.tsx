@@ -173,7 +173,7 @@ export default function MarketOpportunity() {
               <p className="text-gray-600 font-light">
                 higher AOV for brands that offer extended sizes vs. those that don't
               </p>
-              <div className="text-xs text-gray-400 mt-4 font-light">Edited, GlobalData</div>
+              <div className="text-xs text-gray-400 mt-4 font-light">GlobalData</div>
             </div>
           </div>
 

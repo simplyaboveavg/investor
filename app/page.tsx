@@ -90,7 +90,7 @@ export default function InvestorSite() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-            The AI-powered search engine for extended sizes, backed by athletes who shape culture.
+            The AI-powered search engine helping tall people find clothes that fit, backed by athletes who shape culture.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -303,7 +303,7 @@ export default function InvestorSite() {
                 <h3 className="text-3xl font-light text-black mb-2 tracking-tight">Morgan Mackenzie</h3>
                 <p className="text-purple-600 text-xl mb-4 font-light">Founder & CEO</p>
                 <p className="text-gray-600 leading-relaxed font-light">
-                  Ex-Goldman Sachs. Ex-AWS. Duke Economics. 6'2". Self-taught developer, built the backend from scratch and shipped the MVP of simplyaboveaverage in 90 days.
+                  Ex-Goldman Sachs. Ex-AWS. Duke Economics. 6'2" Volleyball player. Self-taught developer, built the backend from scratch and shipped the MVP of simplyaboveaverage in 90 days.
                 </p>
               </div>
             </div>
@@ -325,7 +325,7 @@ export default function InvestorSite() {
                 </div>
               </div>
               <p className="text-gray-600 font-light leading-relaxed">
-                Duke grad. Associate Marketing Manager at Constellation.
+                Duke grad. Associate Marketing Manager at Constellation with a focus on paid ads. Signed model with Marilyn Agency.
               </p>
             </div>
 
