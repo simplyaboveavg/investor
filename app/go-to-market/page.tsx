@@ -135,7 +135,7 @@ export default function GoToMarket() {
 
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-gray-200 text-center">
               <div className="text-5xl font-extralight text-green-600 mb-4">3</div>
-              <p className="text-gray-600 font-light">Viral content series on Instagram</p>
+              <p className="text-gray-600 font-light">Content series on Instagram</p>
             </div>
 
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 border border-gray-200 text-center">
@@ -153,7 +153,7 @@ export default function GoToMarket() {
             READY TO SCALE THIS STRATEGY?
           </h2>
           <p className="text-xl text-gray-600 mb-12 font-light">
-            Join us in executing the most comprehensive go-to-market plan in extended-size fashion
+            Join us in building the future of extended-size fashion
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/#apply-to-invest">

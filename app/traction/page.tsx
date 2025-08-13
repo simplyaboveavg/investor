@@ -191,58 +191,28 @@ export default function Traction() {
       </section>
 
       {/* Social Growth */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-extralight text-black mb-6 tracking-tight">
               SOCIAL GROWTH
             </h2>
             <p className="text-xl text-gray-600 font-light">Strong social media momentum</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
-                <div className="text-center mb-6">
-                  <div className="text-6xl font-extralight text-purple-600 mb-4">133.4K</div>
-                  <h3 className="text-2xl font-light text-black tracking-tight">Views in Last 30 Days</h3>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
-                <div className="text-center mb-6">
-                  <div className="text-6xl font-extralight text-blue-600 mb-4">1,450</div>
-                  <h3 className="text-2xl font-light text-black tracking-tight">New Followers</h3>
-                  <p className="text-gray-600 font-light">Now at 1,690 total</p>
-                </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-3xl p-6 border border-gray-200 shadow-sm">
+              <div className="text-center">
+                <div className="text-5xl font-extralight text-purple-600 mb-3">133.4K</div>
+                <h3 className="text-xl font-light text-black tracking-tight">Views in Last 30 Days</h3>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-8 border border-gray-200">
-              <h3 className="text-3xl font-light text-black mb-8 tracking-tight text-center">Engagement Metrics</h3>
-              
-              <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 border border-gray-200">
-                  <div className="flex items-center justify-between mb-3">
-                    <h4 className="text-xl font-light text-black">Total Interactions</h4>
-                    <div className="text-3xl font-extralight text-purple-600">1,321</div>
-                  </div>
-                  <p className="text-gray-600 font-light text-sm">Across all social platforms</p>
-                </div>
-                
-                <div className="bg-white rounded-xl p-6 border border-gray-200">
-                  <div className="flex items-center justify-between mb-3">
-                    <h4 className="text-xl font-light text-black">Boosted Content Engagement</h4>
-                    <div className="text-3xl font-extralight text-blue-600">63%</div>
-                  </div>
-                  <p className="text-gray-600 font-light text-sm">Strong performance on paid content</p>
-                </div>
-              </div>
-
-              <div className="mt-6 pt-6 border-t border-gray-300">
-                <p className="text-gray-600 font-light text-sm text-center">
-                  <strong>Note:</strong> Organic engagement TBD — ads currently running, minimal feed posting
-                </p>
+            <div className="bg-white rounded-3xl p-6 border border-gray-200 shadow-sm">
+              <div className="text-center">
+                <div className="text-5xl font-extralight text-blue-600 mb-3">1,450</div>
+                <h3 className="text-xl font-light text-black tracking-tight">New Followers</h3>
+                <p className="text-gray-600 font-light">Now at 1,690 total</p>
               </div>
             </div>
           </div>
@@ -276,7 +246,7 @@ export default function Traction() {
                 
                 <div className="bg-white rounded-xl p-4 border border-gray-200">
                   <h4 className="font-medium text-black mb-2">Theme: "Tunnel Fits"</h4>
-                  <p className="text-gray-600 font-light text-sm">Celebrating how athletes are shaping fashion culture</p>
+                  <p className="text-gray-600 font-light text-sm">A celebration of how athletes have turned the walk to the locker room into a runway.</p>
                 </div>
                 
                 <div className="bg-white rounded-xl p-4 border border-gray-200">
@@ -286,7 +256,7 @@ export default function Traction() {
               </div>
               
               <p className="text-purple-600 font-light text-center">
-                Aligning perfectly with our mission at the intersection of sports and fashion
+                Aligning with our mission at the intersection of sports and fashion
               </p>
             </div>
 

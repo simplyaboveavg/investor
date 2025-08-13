@@ -166,18 +166,19 @@ export default function GenAI() {
             <h3 className="text-3xl font-light text-black mb-8 tracking-tight">Business Impact</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <div className="text-5xl font-extralight text-green-600 mb-4">3x</div>
-                <p className="text-gray-600 font-light">Higher conversion rates through personalization</p>
+                <div className="text-5xl font-extralight text-green-600 mb-4">78%</div>
+                <p className="text-gray-600 font-light">Higher repurchase rates with personalization</p>
               </div>
               <div>
                 <div className="text-5xl font-extralight text-blue-600 mb-4">40%</div>
                 <p className="text-gray-600 font-light">Increase in customer lifetime value</p>
               </div>
               <div>
-                <div className="text-5xl font-extralight text-purple-600 mb-4">5x</div>
+                <div className="text-5xl font-extralight text-purple-600 mb-4">3x</div>
                 <p className="text-gray-600 font-light">More effective brand partnerships</p>
               </div>
             </div>
+            <p className="text-gray-500 font-light text-sm mt-8">McKinsey Consumer Report</p>
           </div>
         </div>
       </section>
