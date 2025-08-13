@@ -90,7 +90,7 @@ export default function InvestorSite() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-            The AI-powered search engine helping tall people find clothes that fit, backed by athletes who shape culture.
+            Built by tall athletes, backed by tall athletes. The AI-powered search engine that actually finds clothes that fit.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -171,11 +171,10 @@ export default function InvestorSite() {
               <div className="absolute inset-0 bg-gradient-to-br from-gray-50/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10">
                 <h3 className="text-2xl font-light text-black mb-4 tracking-tight">
-                  AI-Powered Search Engine
+                  No more juggling 10 tabs
                 </h3>
                 <p className="text-gray-600 leading-relaxed font-light">
-                  Google Shopping for extended sizes. AI-powered platform connecting hard-to-fit bodies with brands that
-                  actually carry their sizes.
+                  Search 'jeans size 32, inseam 36' across 100+ brands. See only in-stock items that fit. Add to cart or wishlist, checkout when ready.
                 </p>
               </div>
             </div>
