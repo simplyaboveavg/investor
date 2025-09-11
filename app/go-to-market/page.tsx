@@ -140,7 +140,7 @@ export default function GoToMarket() {
 
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 border border-gray-200 text-center">
               <div className="text-5xl font-extralight text-yellow-600 mb-4">NFL</div>
-              <p className="text-gray-600 font-light">Athletes already signed</p>
+              <p className="text-gray-600 font-light">Athlete already signed</p>
             </div>
           </div>
         </div>

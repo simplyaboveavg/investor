@@ -139,7 +139,7 @@ export default function InvestorSite() {
               <div className="text-5xl font-extralight text-black mb-2 group-hover:text-yellow-600 transition-colors">
                 NFL
               </div>
-              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">Athletes signed</div>
+              <div className="text-gray-500 text-sm uppercase tracking-wider font-light">Athlete signed</div>
             </div>
             <div className="group">
               <div className="text-5xl font-extralight text-black mb-2 group-hover:text-purple-600 transition-colors">
@@ -185,7 +185,7 @@ export default function InvestorSite() {
               <div className="relative z-10">
                 <h3 className="text-2xl font-light text-white mb-4 tracking-tight">Athletes as Architects</h3>
                 <p className="text-gray-300 leading-relaxed font-light">
-                  Beyond endorsements to ownership. We style athletes, curate their image, and give them equity stakes
+                  Beyond endorsements to ownership. We style athletes, curate their image, and give them stakes
                   in the brands they represent.
                 </p>
               </div>
@@ -239,7 +239,13 @@ export default function InvestorSite() {
               <p className="text-gray-600 font-light">Commission on affiliate sales</p>
             </div>
 
-            
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 shadow-sm">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-2xl font-light text-black tracking-tight">API Platform</h3>
+                <div className="text-3xl font-extralight text-orange-600">Tiered</div>
+              </div>
+              <p className="text-gray-600 font-light">Retailers use our API to clean + structure data</p>
+            </div>
           </div>
         </div>
       </section>
@@ -342,7 +348,7 @@ export default function InvestorSite() {
                 </div>
               </div>
               <p className="text-gray-600 font-light leading-relaxed">
-                Styled Duke men's and women's basketball players. Focused on tunnel fits and off-court looks.
+                Stylist for Duke men's and women's basketball players with a focus on tunnel fits and off-court looks.
               </p>
             </div>
           </div>
@@ -516,7 +522,7 @@ export default function InvestorSite() {
               <div className="text-center mt-8 pt-8 border-t border-gray-300">
                 <p className="text-gray-500 mb-2 font-light">Questions? Reach out directly:</p>
                 <div className="space-y-1">
-                  <p className="text-black font-light">investors@simplyaboveaverage.com</p>
+                  <p className="text-black font-light">morgan@simplyaboveaverage.com</p>
                 </div>
               </div>
             </div>

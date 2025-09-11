@@ -536,6 +536,24 @@ export default function Traction() {
               <div className="grid lg:grid-cols-2 gap-8">
                 <div className="space-y-6">
                   <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8127.PNG-z7Her1XatXD0Ns5qu8K0UfTzDy1nuh.png" 
+                    alt="Plus size tall user testing the website and providing specific feedback"
+                    className="w-full rounded-lg"
+                  />
+                  
+                  <div className="bg-blue-100 rounded-xl p-6 border border-blue-200">
+                    <h4 className="text-xl font-light text-black mb-3">Plus Size + Tall Market Gap</h4>
+                    <p className="text-blue-700 font-light text-sm mb-3">
+                      "I thought SO much about this today, there are literally no brands that cater to plus size AND tall girls."
+                    </p>
+                    <p className="text-blue-700 font-light text-sm">
+                      User tested: Size 16 & XXL & 36" inseam - highlighting the intersection challenge
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8128.PNG-rjG2Uth7Z9phkzPRiMSIRpKBlCa2Go.png" 
                     alt="User providing detailed feedback about website functionality and bugs"
                     className="w-full rounded-lg"
@@ -557,24 +575,6 @@ export default function Traction() {
                         <span className="text-gray-600 font-light text-sm">Providing thoughtful, detailed feedback</span>
                       </div>
                     </div>
-                  </div>
-                </div>
-                
-                <div className="space-y-6">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8127.PNG-z7Her1XatXD0Ns5qu8K0UfTzDy1nuh.png" 
-                    alt="Plus size tall user testing the website and providing specific feedback"
-                    className="w-full rounded-lg"
-                  />
-                  
-                  <div className="bg-blue-100 rounded-xl p-6 border border-blue-200">
-                    <h4 className="text-xl font-light text-black mb-3">Plus Size + Tall Market Gap</h4>
-                    <p className="text-blue-700 font-light text-sm mb-3">
-                      "I thought SO much about this today, there are literally no brands that cater to plus size AND tall girls."
-                    </p>
-                    <p className="text-blue-700 font-light text-sm">
-                      User tested: Size 16 & XXL & 36" inseam - highlighting the intersection challenge
-                    </p>
                   </div>
                 </div>
               </div>
