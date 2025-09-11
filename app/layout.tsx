@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'simplyaboveaverage - investment terms',
+  title: 'about simplyaboveaverage',
   description: 'The AI-powered search engine for extended sizes, backed by athletes who shape culture. Join us in reshaping fashion.',
 }
 
